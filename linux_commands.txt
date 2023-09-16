@@ -1,0 +1,2 @@
+# To ssh using port 22 to a server
+ssh -i "vm-ubuintu-testing-7Sept.pem" **username**@**public-ip**
