@@ -1,5 +1,5 @@
-# To ssh using port 22 to a server
-ssh -i "vm-ubuintu-testing-7Sept.pem" **username**@**public-ip**
+# To ssh using port 22 to a server --> Navigate to the location where u have stored the key file
+ssh -i "**key file name**.pem" **username**@**public-ip**
 
 
 # To continue the command while changing line use backslash. Check below example
