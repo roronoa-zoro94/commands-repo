@@ -1,2 +1,10 @@
 # To ssh using port 22 to a server
 ssh -i "vm-ubuintu-testing-7Sept.pem" **username**@**public-ip**
+
+
+# To continue the command while changing line use backslash. Check below example
+helm-run \
+    --run-specs boolq:model=huggyllama/llama-7b \
+    --enable-huggingface-models huggyllama/llama-7b \
+    --suite v1 \
+    --max-eval-instances 10
