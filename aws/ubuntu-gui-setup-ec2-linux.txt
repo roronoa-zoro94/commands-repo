@@ -1,0 +1,25 @@
+# 1. SSH to the EC2 instance using below command (to run the command, navigate to the location where key is present)
+--> ssh -i "key.pem" ubuntu@<public IP>
+
+
+# 2. Run below commands
+--> sudo apt update
+--> sudo apt install ubuntu-desktop
+--> sudo apt install tightvncserver -y
+--> sudo apt install gnome-panel gnome-settings-daemon metacity nautilus gnome-terminal -y
+
+
+# 3. Start VNC Server
+--> vncserver
+create a new passowrd 
+
+
+# 4. Install Remote desktop
+--> sudo apt-get install lxde -y
+--> sudo apt-get install xrdp -y
+
+
+# 5. Set password
+--> sudo passwd ubuntu
+
+Open RDP and pass the Public IP, username (ubuntu) and password set above
