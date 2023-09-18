@@ -6,19 +6,20 @@
 --> ssh -i "key.pem" ubuntu@<public IP>
 
 
-# 2. Run below commands
+# 2. Run below commands if you want ubuntu os
 --> sudo apt update
 --> sudo apt install ubuntu-desktop
 --> sudo apt install tightvncserver -y
 --> sudo apt install gnome-panel gnome-settings-daemon metacity nautilus gnome-terminal -y
 
 
-# 3. Start VNC Server
+# 3. Start VNC Server if u want to access via VNC server
 --> vncserver
 create a new passowrd 
 
 
 # 4. Install Remote desktop
+--> sudo apt update
 --> sudo apt-get install lxde -y
 --> sudo apt-get install xrdp -y
 
