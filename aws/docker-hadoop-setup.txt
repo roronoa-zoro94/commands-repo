@@ -1,0 +1,38 @@
+## Navigate to the site to install docker
+  https://docs.docker.com/engine/install/ubuntu/
+
+
+## Installing docker commands
+    1. for pkg in docker.io docker-doc docker-compose podman-docker containerd runc; do sudo apt-get remove $pkg; done
+  # Add Docker's official GPG key:
+    2. sudo apt-get update
+    3. sudo apt-get install ca-certificates curl gnupg
+    4. sudo install -m 0755 -d /etc/apt/keyrings
+    5. curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+    6. sudo chmod a+r /etc/apt/keyrings/docker.gpg
+  # Add the repository to Apt sources:
+    7. echo \
+        "deb [arch="$(dpkg --print-architecture)" signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
+        "$(. /etc/os-release && echo "$VERSION_CODENAME")" stable" | \
+        sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+    8. sudo apt-get update
+  # To install the latest version, run:
+    9. sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+  # Verify that the Docker Engine installation is successful by running the hello-world image
+    10. sudo docker run hello-world
+
+
+## Running the hadoop-hive image container
+    # Pull the image
+      1. sudo docker pull suhothayan/hadoop-spark-pig-hive:2.9.2
+    # Build the image
+      2. sudo docker build  -t suhothayan/hadoop-spark-pig-hive:2.9.2
+    # Run the command to check the available images
+      3. sudo docker ps -a
+    # get the container id for hadoop-spark-pig-hive container 
+    # starting the hadoop container
+      4. sudo docker start <container_id>
+    # enter the hadoop docker env
+      5. sudo docker exec -it <container_id> bin/bash
+    # run pig locally
+      6. pig -x local
