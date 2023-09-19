@@ -27,6 +27,7 @@
       1. sudo docker pull suhothayan/hadoop-spark-pig-hive:2.9.2
     * Build the image
       2. sudo docker build  -t suhothayan/hadoop-spark-pig-hive:2.9.2
+         sudo docker run -it -p 50070:50070 -p 8088:8088 -p 8080:8080 suhothayan/hadoop-spark-pig-hive:2.9.2 bash
     * Run the command to check the available images
       3. sudo docker ps -a
     * get the container id for suhothayan/hadoop-spark-pig-hive:2.9.2 container 
