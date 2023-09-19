@@ -29,8 +29,8 @@
       2. sudo docker build  -t suhothayan/hadoop-spark-pig-hive:2.9.2
     # Run the command to check the available images
       3. sudo docker ps -a
-    # get the container id for hadoop-spark-pig-hive container 
-    # starting the hadoop container
+    # get the container id for suhothayan/hadoop-spark-pig-hive:2.9.2 container 
+    # starting the suhothayan/hadoop-spark-pig-hive:2.9.2 container
       4. sudo docker start <container_id>
     # enter the hadoop docker env
       5. sudo docker exec -it <container_id> bin/bash
