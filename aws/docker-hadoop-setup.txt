@@ -36,3 +36,10 @@
       5. sudo docker exec -it <container_id> bin/bash
     # run pig locally
       6. pig -x local
+
+
+## Pig
+  # Exit command in pig to exit grunt shell
+    - quit
+  # Load file to pig
+    - student= Load "path" using PigStorage(',') as (id:int, FN:chararray, LN: chararray)
