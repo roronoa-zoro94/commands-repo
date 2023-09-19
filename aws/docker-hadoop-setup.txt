@@ -39,7 +39,29 @@
 
 
 ## Pig
-  # Exit command in pig to exit grunt shell
+  * Copy file to docker container from local
+    - sudo docker cp <local file path> <container_id>:/<folder_name>
+  * Exit command in pig to exit grunt shell
     - quit
-  # Load file to pig
+  * Load file to pig
     - student= Load "path" using PigStorage(',') as (id:int, FN:chararray, LN: chararray)
+  * Dump data to pig
+    - dump student
+  * Illustrate operator --> prints the schema with one example
+    - illustrate student
+  * Describe operator --> prints the schema o
+    - describe student
+  * Explain operator --> give the mapreduce plan
+    - explain student
+  * Save the result in Docker. Pig does not store anything. It is just craeting an image to work with
+    - STORE student INTO 'pig_docker_result' USING PigStorage(',');
+    - quit
+    - cd pig_docker_result/
+    - cat part-m-****    --> check the file and you will be able to see the contents of the file
+  * Group BY operation
+    - 
+
+
+
+  
+    - 
