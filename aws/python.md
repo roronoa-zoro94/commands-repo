@@ -10,3 +10,7 @@
   2. sudo add-apt-repository ppa:deadsnakes/ppa
   3. sudo apt install python3.10
   4. python3.10 --version
+
+## For virtual env
+  1. sudo apt install python3.10-venv
+  2. python3 -m venv venv
