@@ -14,3 +14,7 @@
 ## For virtual env
   1. sudo apt install python3.10-venv
   2. python3 -m venv venv
+
+## Install git
+  1. sudo apt install git
+  2. git --version
