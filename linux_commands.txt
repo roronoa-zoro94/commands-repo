@@ -1,3 +1,48 @@
+##########################################################################################
+1. To check who am i
+whoami
+
+
+########################################################################################
+2. manual --> purely informative
+man <command_name>    --> leann more about a new command
+
+########################################################################################
+3. clear terminal screen
+clear    --> clear entire terminal
+clear -x  --> clear terminal but save earlier output in terminal  (check synopsis)
+
+#######################################################################################
+4. check current directory
+pwd
+
+
+##########################################################################################
+5. list of the contents in a folder
+ls   --> list everything inside folder
+ls <folder>   --> list contents inside a folder
+ls <full path to folder>   --> list content in other base directory
+ls -l   --> list the contents of directory with more informations
+ls -a    -> list files which starts with .
+ls -a -l (ls -al)    --> 
+
+
+###########################################################################################
+6. change directory
+help cd                            --> documentation related to cd
+cd <folder location>   --> move to the folder path
+cd ..    --> back to previous folder (back up one folder)
+cd ~     --> to home directory
+cd /     --> to base directory (absolute path)
+
+
+
+
+
+###########################################################################################
+6. 
+
+
 # To ssh using port 22 to a server --> Navigate to the location where u have stored the key file
 ssh -i "**key file name**.pem" **username**@**public-ip**
 
