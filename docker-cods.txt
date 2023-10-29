@@ -1,1 +1,16 @@
-# MongoDB
+########################################################################
+##  MongoDB --> https://hub.docker.com/_/mongo
+1. pull docker image --> docker pull mongo
+2. run docker image  --> docker run --name some-mongo -d mongo:tag
+#######################################################################
+
+
+#######################################################################
+## Qdrant DB  --> https://qdrant.tech/documentation/quick-start/
+1. pull image  --> docker pull qdrant/qdrant
+2. run image --> 
+docker run -p 6333:6333 \
+    -v $(pwd)/qdrant_storage:/qdrant/storage:z \
+    qdrant/qdrant
+######################################################################
+
